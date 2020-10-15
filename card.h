@@ -1,0 +1,49 @@
+#pragma once
+#include <iostream>
+#include "card_deck.h"
+using std::cout;
+using std::string;
+
+const string suits[] = { "S", "H", "C", "D" }; // Spades, Hearts, Clubs, Diamonds
+enum Face { Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King };
+
+
+class Card : public card_deck {
+
+private:
+	string suit; 
+	Face face;
+	
+public:
+	Card() {};
+	Card(string s, Face num) : suit(s), face(num) {};
+	void printCard();
+};
+
+
+void Card::printCard()
+{
+	char f;
+	switch (face)
+	{
+		case 1: 
+			f = 'A';
+			cout << suit << "-" << f;
+			break;
+		case 11:
+			f = 'J';
+			cout << suit << "-" << f;
+			break;
+		case 12:
+			f = 'Q';
+			cout << suit << "-" << f;
+			break;
+		case 13:
+			f = 'K';
+			cout << suit << "-" << f;
+			break;
+		default:
+			cout << suit << "-" << face;
+	}
+	
+}
