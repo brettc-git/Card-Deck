@@ -40,6 +40,8 @@ string Card::printCard()
 
 }
 
+
+// Accessors
 string Card::getSuit()
 {
 	return suit;
