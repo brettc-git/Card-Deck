@@ -1,2 +1,2 @@
 # Card-Deck
-Global for any card games
+This is a repository for a card deck that can be used for coding card games. 
