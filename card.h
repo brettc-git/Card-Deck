@@ -15,7 +15,7 @@ private:
 	Face face;
 	
 public:
-	Card() {};
+	Card() : suit(), face() {};
 	Card(string s, Face num) : suit(s), face(num) {};
 	void printCard();
 };
