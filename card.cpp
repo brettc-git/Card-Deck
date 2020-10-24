@@ -36,7 +36,7 @@ string Card::printCard()
 	default:
 		cout << "Invalid condition!";
 	}
-	return fullcard;
+	return fullcard; // A card will look like: S-A, D-J, D-4, C-8, etc.
 
 }
 
